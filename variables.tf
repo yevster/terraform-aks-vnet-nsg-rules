@@ -2,41 +2,41 @@ variable "client_id" {}
 variable "client_secret" {}
 
 variable "agent_count" {
-    default = 5
+  default = 5
 }
 
 variable "ssh_public_key" {
-    default = "~/.ssh/id_rsa.pub"
+  default = "~/.ssh/id_rsa.pub"
 }
 
 variable "dns_prefix" {
-    default = "k8stest"
+  default = "k8stest"
 }
 
 variable cluster_name {
-    default = "k8stest"
+  default = "k8stest"
 }
 
 variable resource_group_name {
-    default = "AKSTestingJbhunt"
+  default = "AKSTestingJbhunt"
 }
 
 variable location {
-    default = "Central US"
+  default = "Central US"
 }
 
 variable log_analytics_workspace_name {
-    default = "testLogAnalyticsWorkspaceName"
+  default = "testLogAnalyticsWorkspaceName"
 }
 
 # refer https://azure.microsoft.com/global-infrastructure/services/?products=monitor for log analytics available regions
 variable log_analytics_workspace_location {
-    default = "centralus"
+  default = "centralus"
 }
 
 # refer https://azure.microsoft.com/pricing/details/monitor/ for log analytics pricing 
 variable log_analytics_workspace_sku {
-    default = "PerGB2018"
+  default = "PerGB2018"
 }
 
 variable "virtual_network_name" {
@@ -58,7 +58,6 @@ variable "aks_subnet_address_prefix" {
   description = "Containers DNS server IP address."
   default     = "15.0.0.0/16"
 }
-
 
 variable "aks_service_cidr" {
   description = "A CIDR notation IP range from which to assign service cluster IPs."
