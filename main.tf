@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "k8s" {
 }
 
 resource "azurerm_network_security_group" "onprem-nsg" {
-  name                = "jbhunt-nsg"
+  name                = "test-nsg"
   location            = "${azurerm_resource_group.k8s.location}"
   resource_group_name = "${azurerm_resource_group.k8s.name}"
 
