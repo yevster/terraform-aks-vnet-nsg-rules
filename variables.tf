@@ -18,7 +18,7 @@ variable cluster_name {
 }
 
 variable resource_group_name {
-  default = "AKSTestingJbhunt"
+  default = "AKSClusterTFTest"
 }
 
 variable location {
